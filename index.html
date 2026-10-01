@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Concentradores Seminuevos Certificados</title>
+
+<meta name="description" content="Concentradores Seminuevos Certificados. Venta de concentradores de oxígeno DeVilbiss de 5 y 10 litros e Inogen One G5. Equipos seminuevos revisados.">
+
+<meta name="theme-color" content="#075985">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --azul:#075985;
+    --azul-oscuro:#064e75;
+    --azul-claro:#eaf6fb;
+    --verde:#16a34a;
+    --verde-oscuro:#12813b;
+    --gris:#f5f7f9;
+    --gris2:#e5e7eb;
+    --texto:#17202a;
+    --texto-suave:#64748b;
+    --blanco:#ffffff;
+    --rojo:#dc2626;
+    --sombra:0 8px 28px rgba(15,23,42,.09);
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Inter",Arial,sans-serif;
+    background:#fff;
+    color:var(--texto);
+}
+
+/* =========================
+   BARRA SUPERIOR
+========================= */
+
+.topbar{
+    background:var(--azul-oscuro);
+    color:#fff;
+    font-size:13px;
+    padding:9px 20px;
+}
+
+.topbar-inner{
+    max-width:1250px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+}
+
+.topbar a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header{
+    background:#fff;
+    border-bottom:1px solid var(--gris2);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.header-inner{
+    max-width:1250px;
+    margin:auto;
+    min-height:76px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+    gap:25px;
+}
+
+.logo{
+    text-decoration:none;
+    color:var(--azul);
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-icon{
+    width:48px;
+    height:48px;
+    border-radius:12px;
+    background:var(--azul);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    font-weight:800;
+}
+
+.logo-text{
+    line-height:1.05;
+}
+
+.logo-title{
+    font-size:19px;
+    font-weight:800;
+}
+
+.logo-sub{
+    font-size:11px;
+    color:var(--texto-suave);
+    margin-top:4px;
+}
+
+.nav{
+    display:flex;
+    align-items:center;
+    gap:26px;
+}
+
+.nav a{
+    color:#334155;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+}
+
+.nav a:hover{
+    color:var(--azul);
+}
+
+.header-contact{
+    background:var(--verde);
+    color:#fff;
+    padding:12px 18px;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:700;
+    white-space:nowrap;
+}
+
+.header-contact:hover{
+    background:var(--verde-oscuro);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    background:
+        linear-gradient(90deg,rgba(4,78,117,.97),rgba(7,89,133,.88)),
+        url("https://cpapeuropa.com/cdn/shop/files/devilbiss-525-oxygen-concentrator-side-view.webp?v=1775034817&width=1920");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero-inner{
+    max-width:1250px;
+    margin:auto;
+    padding:64px 20px;
+}
+
+.hero-content{
+    max-width:720px;
+}
+
+.hero-label{
+    display:inline-block;
+    background:rgba(255,255,255,.14);
+    border:1px solid rgba(255,255,255,.28);
+    padding:7px 12px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.hero h1{
+    font-size:42px;
+    line-height:1.1;
+    margin-bottom:17px;
+    font-weight:800;
+}
+
+.hero p{
+    font-size:17px;
+    line-height:1.7;
+    color:#e0f2fe;
+    margin-bottom:27px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    border:none;
+    text-decoration:none;
+    cursor:pointer;
+    padding:13px 20px;
+    border-radius:8px;
+    font-size:14px;
+    font-weight:700;
+    transition:.2s;
+}
+
+.btn-green{
+    background:var(--verde);
+    color:#fff;
+}
+
+.btn-green:hover{
+    background:var(--verde-oscuro);
+    transform:translateY(-1px);
+}
+
+.btn-white{
+    background:white;
+    color:var(--azul);
+}
+
+.btn-white:hover{
+    background:#f0f9ff;
+}
+
+/* =========================
+   BREADCRUMB
+========================= */
+
+.container{
+    max-width:1250px;
+    margin:auto;
+    padding:0 20px;
+}
+
+.breadcrumb{
+    padding:22px 0 10px;
+    color:#64748b;
+    font-size:13px;
+}
+
+.breadcrumb a{
+    color:var(--azul);
+    text-decoration:none;
+}
+
+/* =========================
+   TITULO CATALOGO
+========================= */
+
+.catalog-header{
+    padding:15px 0 25px;
+}
+
+.catalog-header h2{
+    font-size:31px;
+    margin-bottom:8px;
+}
+
+.catalog-header p{
+    color:var(--texto-suave);
+    font-size:14px;
+}
+
+/* =========================
+   FILTROS
+========================= */
+
+.toolbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    border-top:1px solid var(--gris2);
+    border-bottom:1px solid var(--gris2);
+    padding:16px 0;
+    margin-bottom:30px;
+}
+
+.result-count{
+    color:#64748b;
+    font-size:14px;
+}
+
+.sort-box{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.sort-box label{
+    font-size:13px;
+    color:#64748b;
+}
+
+.sort-box select{
+    border:1px solid #cbd5e1;
+    border-radius:6px;
+    padding:9px 35px 9px 12px;
+    background:#fff;
+    color:#334155;
+}
+
+/* =========================
+   PRODUCTOS
+========================= */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+    padding-bottom:65px;
+}
+
+.product-card{
+    border:1px solid #e2e8f0;
+    border-radius:10px;
+    background:white;
+    overflow:hidden;
+    position:relative;
+    transition:.25s;
+}
+
+.product-card:hover{
+    box-shadow:var(--sombra);
+    transform:translateY(-3px);
+}
+
+.product-image{
+    height:290px;
+    background:#f8fafc;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    padding:25px;
+}
+
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    transition:.25s;
+}
+
+.product-card:hover .product-image img{
+    transform:scale(1.04);
+}
+
+.badge{
+    position:absolute;
+    top:14px;
+    left:14px;
+    background:var(--verde);
+    color:#fff;
+    padding:7px 10px;
+    border-radius:5px;
+    font-size:11px;
+    font-weight:800;
+    z-index:2;
+}
+
+.badge.blue{
+    background:var(--azul);
+}
+
+.product-info{
+    padding:21px;
+}
+
+.product-category{
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:.5px;
+    color:var(--azul);
+    font-weight:800;
+    margin-bottom:9px;
+}
+
+.product-name{
+    font-size:19px;
+    line-height:1.35;
+    font-weight:700;
+    min-height:52px;
+}
+
+.product-description{
+    color:#64748b;
+    font-size:13px;
+    line-height:1.6;
+    margin:12px 0;
+    min-height:63px;
+}
+
+.specs{
+    border-top:1px solid #e2e8f0;
+    border-bottom:1px solid #e2e8f0;
+    padding:13px 0;
+    margin:13px 0;
+}
+
+.spec{
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+    font-size:12px;
+    padding:4px 0;
+}
+
+.spec span:first-child{
+    color:#64748b;
+}
+
+.spec strong{
+    text-align:right;
+}
+
+.price-label{
+    font-size:11px;
+    color:#64748b;
+    margin-bottom:3px;
+}
+
+.price{
+    font-size:27px;
+    font-weight:800;
+    color:var(--azul);
+}
+
+.price.consulta{
+    font-size:21px;
+}
+
+.product-actions{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:9px;
+    margin-top:17px;
+}
+
+.btn-product{
+    padding:11px 8px;
+    border-radius:7px;
+    font-size:12px;
+}
+
+.btn-details{
+    border:1px solid #cbd5e1;
+    color:#334155;
+    background:#fff;
+}
+
+.btn-quote{
+    background:var(--verde);
+    color:#fff;
+}
+
+.btn-quote:hover{
+    background:var(--verde-oscuro);
+}
+
+/* =========================
+   BENEFICIOS
+========================= */
+
+.benefits{
+    background:#f8fafc;
+    padding:55px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.section-title h2{
+    font-size:28px;
+    margin-bottom:8px;
+}
+
+.section-title p{
+    color:#64748b;
+    font-size:14px;
+}
+
+.benefit-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.benefit{
+    background:#fff;
+    border:1px solid #e2e8f0;
+    border-radius:10px;
+    padding:25px 20px;
+    text-align:center;
+}
+
+.benefit-icon{
+    width:48px;
+    height:48px;
+    background:#e0f2fe;
+    color:var(--azul);
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 15px;
+    font-size:21px;
+}
+
+.benefit h3{
+    font-size:15px;
+    margin-bottom:8px;
+}
+
+.benefit p{
+    color:#64748b;
+    font-size:12px;
+    line-height:1.6;
+}
+
+/* =========================
+   INFO
+========================= */
+
+.info-section{
+    padding:65px 0;
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.info-text h2{
+    font-size:29px;
+    margin-bottom:15px;
+}
+
+.info-text p{
+    color:#64748b;
+    line-height:1.75;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.info-list{
+    list-style:none;
+    margin-top:18px;
+}
+
+.info-list li{
+    margin-bottom:11px;
+    font-size:14px;
+    color:#334155;
+}
+
+.info-list li::before{
+    content:"✓";
+    color:var(--verde);
+    font-weight:800;
+    margin-right:9px;
+}
+
+.info-box{
+    background:var(--azul);
+    border-radius:15px;
+    color:white;
+    padding:35px;
+}
+
+.info-box h3{
+    font-size:22px;
+    margin-bottom:12px;
+}
+
+.info-box p{
+    color:#dbeafe;
+    line-height:1.7;
+    font-size:14px;
+}
+
+.info-box .btn{
+    margin-top:20px;
+}
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contact{
+    background:#075985;
+    color:white;
+    padding:55px 20px;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.contact p{
+    color:#dbeafe;
+    margin-bottom:23px;
+    font-size:14px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+    background:#0f172a;
+    color:#cbd5e1;
+    padding:30px 20px;
+}
+
+.footer-inner{
+    max-width:1250px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    align-items:center;
+}
+
+.footer-title{
+    color:#fff;
+    font-weight:700;
+    margin-bottom:5px;
+}
+
+.footer p{
+    font-size:12px;
+    line-height:1.6;
+}
+
+.footer-right{
+    text-align:right;
+}
+
+/* =========================
+   WHATSAPP FLOTANTE
+========================= */
+
+.whatsapp-float{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#25D366;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:28px;
+    box-shadow:0 6px 20px rgba(0,0,0,.22);
+    z-index:9999;
+    transition:.2s;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.08);
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.modal{
+    position:fixed;
+    inset:0;
+    background:rgba(15,23,42,.65);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    z-index:5000;
+}
+
+.modal.active{
+    display:flex;
+}
+
+.modal-content{
+    background:#fff;
+    max-width:760px;
+    width:100%;
+    max-height:90vh;
+    overflow:auto;
+    border-radius:14px;
+    padding:30px;
+    position:relative;
+}
+
+.close{
+    position:absolute;
+    right:18px;
+    top:15px;
+    border:none;
+    background:none;
+    font-size:27px;
+    cursor:pointer;
+    color:#64748b;
+}
+
+.modal-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.modal-image{
+    background:#f8fafc;
+    border-radius:10px;
+    min-height:300px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.modal-image img{
+    max-width:100%;
+    max-height:330px;
+    object-fit:contain;
+}
+
+.modal h2{
+    font-size:25px;
+    margin-bottom:12px;
+}
+
+.modal p{
+    color:#64748b;
+    line-height:1.7;
+    font-size:14px;
+    margin-bottom:14px;
+}
+
+.modal-specs{
+    background:#f8fafc;
+    border-radius:9px;
+    padding:15px;
+    margin:15px 0;
+}
+
+.modal-specs div{
+    display:flex;
+    justify-content:space-between;
+    padding:6px 0;
+    border-bottom:1px solid #e2e8f0;
+    font-size:13px;
+}
+
+.modal-specs div:last-child{
+    border-bottom:0;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:950px){
+
+    .nav{
+        display:none;
+    }
+
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .benefit-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .info-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:650px){
+
+    .topbar-inner{
+        justify-content:center;
+        text-align:center;
+    }
+
+    .topbar-inner span:first-child{
+        display:none;
+    }
+
+    .header-inner{
+        min-height:68px;
+        padding:0 14px;
+    }
+
+    .logo-title{
+        font-size:16px;
+    }
+
+    .logo-icon{
+        width:40px;
+        height:40px;
+        font-size:19px;
+    }
+
+    .header-contact{
+        padding:9px 11px;
+        font-size:12px;
+    }
+
+    .hero-inner{
+        padding:45px 18px;
+    }
+
+    .hero h1{
+        font-size:31px;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    .container{
+        padding:0 15px;
+    }
+
+    .catalog-header h2{
+        font-size:25px;
+    }
+
+    .toolbar{
+        align-items:flex-start;
+        flex-direction:column;
+    }
+
+    .products{
+        grid-template-columns:1fr;
+    }
+
+    .product-image{
+        height:270px;
+    }
+
+    .benefit-grid{
+        grid-template-columns:1fr;
+    }
+
+    .info-box{
+        padding:25px;
+    }
+
+    .footer-inner{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .footer-right{
+        text-align:left;
+    }
+
+    .modal-grid{
+        grid-template-columns:1fr;
+    }
+
+    .modal-content{
+        padding:22px;
+    }
+
+    .modal-image{
+        min-height:230px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     BARRA SUPERIOR
+========================= -->
+
+<div class="topbar">
+    <div class="topbar-inner">
+        <span>CONCENTRADORES CERTIFICADOS SEMINUEVOS DE GAMA ALTA</span>
+        <a href="https://wa.me/5215651546640?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20concentradores%20seminuevos." target="_blank">
+            WhatsApp: 56 5154 6640
+        </a>
+    </div>
+</div>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header class="header">
+
+    <div class="header-inner">
+
+        <a href="#" class="logo">
+
+            <div class="logo-icon">
+                O₂
+            </div>
+
+            <div class="logo-text">
+                <div class="logo-title">
+                    Concentradores Seminuevos
+                </div>
+
+                <div class="logo-sub">
+                    Certificados
+                </div>
+            </div>
+
+        </a>
+
+        <nav class="nav">
+            <a href="#productos">Concentradores</a>
+            <a href="#beneficios">Ventajas</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <a class="header-contact"
+           href="https://wa.me/5215651546640?text=Hola%2C%20quiero%20cotizar%20un%20concentrador%20de%20ox%C3%ADgeno."
+           target="_blank">
+            Contactar
+        </a>
+
+    </div>
+
+</header>
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+    <div class="hero-inner">
+
+        <div class="hero-content">
+
+            <span class="hero-label">
+                CONCENTRADORES DE OXÍGENO SEMINUEVOS
+            </span>
+
+            <h1>
+                Equipos revisados para una segunda vida
+            </h1>
+
+            <p>
+                Encuentra concentradores de oxígeno DeVilbiss e Inogen
+                seminuevos, con información técnica y atención directa
+                por WhatsApp.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#productos" class="btn btn-white">
+                    Ver concentradores
+                </a>
+
+                <a href="https://wa.me/5215651546640?text=Hola%2C%20quiero%20una%20cotizaci%C3%B3n%20de%20un%20concentrador%20seminuevo."
+                   class="btn btn-green"
+                   target="_blank">
+                    Solicitar cotización
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     CATALOGO
+========================= -->
+
+<main id="productos" class="container">
+
+    <div class="breadcrumb">
+        <a href="#">Inicio</a>
+        &nbsp; / &nbsp;
+        Concentradores de oxígeno
+    </div>
+
+    <div class="catalog-header">
+
+        <h2>
+            Concentradores de oxígeno
+        </h2>
+
+        <p>
+            DeVilbiss de 5 y 10 litros e Inogen One G5 portátil.
+        </p>
+
+    </div>
+
+    <div class="toolbar">
+
+        <div class="result-count">
+            3 productos
+        </div>
+
+        <div class="sort-box">
+
+            <label for="orden">
+                Ordenar:
+            </label>
+
+            <select id="orden" onchange="ordenarProductos()">
+                <option value="default">Recomendados</option>
+                <option value="menor">Precio menor a mayor</option>
+                <option value="mayor">Precio mayor a menor</option>
+            </select>
+
+        </div>
+
+    </div>
+
+    <div class="products" id="productGrid">
+
+        <!-- =========================
+             DEVILBISS 5 L
+        ========================== -->
+
+        <article class="product-card" data-price="12500">
+
+            <div class="product-image">
+
+                <span class="badge">
+                    SEMINUEVO CERTIFICADO
+                </span>
+
+                <img
+                    src="https://cpapeuropa.com/cdn/shop/files/devilbiss-525-oxygen-concentrator-side-view.webp?v=1775034817&width=1920"
+                    alt="Concentrador DeVilbiss 5 litros"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <div class="product-category">
+                    DeVilbiss
+                </div>
+
+                <h3 class="product-name">
+                    Concentrador DeVilbiss 5 Litros
+                </h3>
+
+                <p class="product-description">
+                    Concentrador estacionario de oxígeno para uso continuo,
+                    con flujo ajustable y sistema OSD.
+                </p>
+
+                <div class="specs">
+
+                    <div class="spec">
+                        <span>Flujo</span>
+                        <strong>0.5–5 L/min</strong>
+                    </div>
+
+                    <div class="spec">
+                        <span>Oxígeno</span>
+                        <strong>87–96%*</strong>
+                    </div>
+
+                    <div class="spec">
+                        <span>Peso aprox.</span>
+                        <strong>16.3 kg</strong>
+                    </div>
+
+                    <div class="spec">
+                        <span>Uso</span>
+                        <strong>Estacionario</strong>
+                    </div>
+
+                </div>
+
+                <div class="price-label">
+                    Precio
+                </div>
+
+                <div class="price">
+                    $12,500
+                </div>
+
+                <div class="product-actions">
+
+                    <button class="btn btn-product btn-details"
+                        onclick="mostrarProducto(0)">
+                        Ver detalles
+                    </button>
+
+                    <a class="btn btn-product btn-quote"
+                       href="https://wa.me/5215651546640?text=Hola%2C%20me%20interesa%20el%20DeVilbiss%20de%205%20litros%20seminuevo%20certificado%20de%20%2412%2C500."
+                       target="_blank">
+                        Cotizar
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =========================
+             DEVILBISS 10 L
+        ========================== -->
+
+        <article class="product-card" data-price="28000">
+
+            <div class="product-image">
+
+                <span class="badge">
+                    SEMINUEVO CERTIFICADO
+                </span>
+
+                <img
+                    src="https://www.cfs.it/cdn/shop/files/compact1025_1280.jpg?v=1740052884&width=600"
+                    alt="Concentrador DeVilbiss 10 litros"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <div class="product-category">
+                    DeVilbiss
+                </div>
+
+                <h3 class="product-name">
+                    Concentrador DeVilbiss 10 Litros
+                </h3>
+
+                <p class="product-description">
+                    Equipo de alta capacidad para requerimientos de flujo
+                    de oxígeno de hasta 10 litros por minuto.
+                </p>
+
+                <div class="specs">
+
+                    <div class="spec">
+                        <span>Flujo</span>
+                        <strong>2–10 L/min</strong>
+                    </div>
+
+                    <div class="spec">
+                        <span>Oxígeno</span>
+                        <strong>87–96%</strong>
+                    </div>
+
+                    <div class="spec">
+                        <span>Peso aprox.</span>
+                        <strong>19 kg</strong>
+                    </div>
+
+                    <div class="spec">
+                        <span>Uso</span>
+                        <strong>Estacionario</strong>
+                    </div>
+
+                </div>
+
+                <div class="price-label">
+                    Precio
+                </div>
+
+                <div class="price">
+                    $28,000
+                </div>
+
+                <div class="product-actions">
+
+                    <button class="btn btn-product btn-details"
+                        onclick="mostrarProducto(1)">
+                        Ver detalles
+                    </button>
+
+                    <a class="btn btn-product btn-quote"
+                       href="https://wa.me/5215651546640?text=Hola%2C%20me%20interesa%20el%20DeVilbiss%20de%2010%20litros%20seminuevo%20certificado%20de%20%2428%2C000."
+                       target="_blank">
+                        Cotizar
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =========================
+             INOGEN G5
+        ========================== -->
+
+        <article class="product-card" data-price="999999">
+
+            <div class="product-image">
+
+                <span class="badge blue">
+                    PORTÁTIL
+                </span>
+
+                <img
+                    src="https://vitalcareusa.com/cdn/shop/files/inogeng5_86e482d4-5cd6-4d7a-ab5d-f891817c0e6a_700x700.png?v=1790009643"
+                    alt="Inogen One G5 portátil"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <div class="product-category">
+                    Inogen
+                </div>
+
+                <h3 class="product-name">
+                    Inogen One G5 Portátil
+                </h3>
+
+                <p class="product-description">
+                    Concentrador portátil compacto con tecnología de
+                    administración de oxígeno por pulsos.
+                </p>
+
+                <div class="specs">
+
+                    <div class="spec">
+                        <span>Flujo</span>
+                        <strong>1–6 pulsos</strong>
+                    </div>
+
+                    <div class="spec">
+                        <span>Batería</span>
+                        <strong>Hasta 6.5 h*</strong>
+                    </div>
+
+                    <div class="spec">
+                        <span>Peso</span>
+                        <strong>2.2–2.5 kg*</strong>
+                    </div>
+
+                    <div class="spec">
+                        <span>Ruido</span>
+                        <strong>38–39 dBA*</strong>
+                    </div>
+
+                </div>
+
+                <div class="price-label">
+                    Precio
+                </div>
+
+                <div class="price consulta">
+                    Consultar
+                </div>
+
+                <div class="product-actions">
+
+                    <button class="btn btn-product btn-details"
+                        onclick="mostrarProducto(2)">
+                        Ver detalles
+                    </button>
+
+                    <a class="btn btn-product btn-quote"
+                       href="https://wa.me/5215651546640?text=Hola%2C%20me%20interesa%20el%20Inogen%20One%20G5%20port%C3%A1til%20seminuevo.%20Quiero%20precio%20y%20disponibilidad."
+                       target="_blank">
+                        Cotizar
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</main>
+
+
+<!-- =========================
+     BENEFICIOS
+========================= -->
+
+<section class="benefits" id="beneficios">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                ¿Por qué comprar un equipo seminuevo?
+            </h2>
+
+            <p>
+                Una alternativa para adquirir equipos de oxigenoterapia
+                a un precio diferente al de un equipo nuevo.
+            </p>
+
+        </div>
+
+        <div class="benefit-grid">
+
+            <div class="benefit">
+
+                <div class="benefit-icon">
+                    ✓
+                </div>
+
+                <h3>
+                    Equipos revisados
+                </h3>
+
+                <p>
+                    Los equipos se presentan como seminuevos y
+                    se comercializan después de un proceso de revisión.
+                </p>
+
+            </div>
+
+
+            <div class="benefit">
+
+                <div class="benefit-icon">
+                    O₂
+                </div>
+
+                <h3>
+                    Información técnica
+                </h3>
+
+                <p>
+                    Consulta las principales características de cada
+                    modelo antes de solicitar tu cotización.
+                </p>
+
+            </div>
+
+
+            <div class="benefit">
+
+                <div class="benefit-icon">
+                    $
+                </div>
+
+                <h3>
+                    Precios claros
+                </h3>
+
+                <p>
+                    Los modelos DeVilbiss de 5 y 10 litros muestran
+                    directamente su precio de venta.
+                </p>
+
+            </div>
+
+
+            <div class="benefit">
+
+                <div class="benefit-icon">
+                    WA
+                </div>
+
+                <h3>
+                    Atención por WhatsApp
+                </h3>
+
+                <p>
+                    Solicita fotografías, disponibilidad, información
+                    y cotización directamente con nuestro equipo.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     INFORMACION
+========================= -->
+
+<section class="info-section" id="nosotros">
+
+    <div class="container">
+
+        <div class="info-grid">
+
+            <div class="info-text">
+
+                <h2>
+                    Concentradores Seminuevos Certificados
+                </h2>
+
+                <p>
+                    Ponemos a tu disposición concentradores de oxígeno
+                    estacionarios y portátiles de marcas reconocidas,
+                    con información técnica para ayudarte a identificar
+                    el equipo que necesitas.
+                </p>
+
+                <p>
+                    Contamos con opciones DeVilbiss de 5 y 10 litros,
+                    además del Inogen One G5 portátil.
+                </p>
+
+                <ul class="info-list">
+
+                    <li>
+                        DeVilbiss 5 L
+                    </li>
+
+                    <li>
+                        DeVilbiss 10 L
+                    </li>
+
+                    <li>
+                        Inogen One G5 portátil
+                    </li>
+
+                    <li>
+                        Atención personalizada por WhatsApp
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <h3>
+                    ¿No sabes cuál necesitas?
+                </h3>
+
+                <p>
+                    Envíanos un mensaje por WhatsApp indicando el modelo
+                    que buscas. Podemos proporcionarte información sobre
+                    disponibilidad, precio y características del equipo.
+                </p>
+
+                <a class="btn btn-green"
+                   href="https://wa.me/5215651546640?text=Hola%2C%20necesito%20ayuda%20para%20elegir%20un%20concentrador%20de%20ox%C3%ADgeno."
+                   target="_blank">
+                    Hablar por WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACTO
+========================= -->
+
+<section class="contact" id="contacto">
+
+    <h2>
+        ¿Quieres cotizar un concentrador?
+    </h2>
+
+    <p>
+        Comunícate directamente con nosotros por WhatsApp.
+    </p>
+
+    <a class="btn btn-green"
+       href="https://wa.me/5215651546640?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20concentradores%20seminuevos%20certificados."
+       target="_blank">
+        Contactar por WhatsApp
+    </a>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+    <div class="footer-inner">
+
+        <div>
+
+            <div class="footer-title">
+                Concentradores Seminuevos Certificados
+            </div>
+
+            <p>
+                Venta de concentradores de oxígeno seminuevos.
+            </p>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p>
+                WhatsApp
+            </p>
+
+            <p>
+                <strong style="color:white;">
+                    56 5154 6640
+                </strong>
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     WHATSAPP FLOTANTE
+========================= -->
+
+<a class="whatsapp-float"
+   href="https://wa.me/5215651546640?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20concentradores%20seminuevos."
+   target="_blank"
+   aria-label="Contactar por WhatsApp">
+    ☎
+</a>
+
+
+<!-- =========================
+     MODAL PRODUCTOS
+========================= -->
+
+<div class="modal" id="productModal">
+
+    <div class="modal-content">
+
+        <button class="close" onclick="cerrarModal()">
+            ×
+        </button>
+
+        <div class="modal-grid">
+
+            <div class="modal-image">
+
+                <img id="modalImage" src="" alt="Producto">
+
+            </div>
+
+            <div>
+
+                <div class="product-category" id="modalCategory"></div>
+
+                <h2 id="modalTitle"></h2>
+
+                <p id="modalDescription"></p>
+
+                <div class="modal-specs">
+
+                    <div>
+                        <span>Flujo</span>
+                        <strong id="modalFlow"></strong>
+                    </div>
+
+                    <div>
+                        <span>Oxígeno</span>
+                        <strong id="modalOxygen"></strong>
+                    </div>
+
+                    <div>
+                        <span>Peso</span>
+                        <strong id="modalWeight"></strong>
+                    </div>
+
+                    <div>
+                        <span>Tipo</span>
+                        <strong id="modalType"></strong>
+                    </div>
+
+                </div>
+
+                <a id="modalWhatsapp"
+                   class="btn btn-green"
+                   target="_blank">
+                    Solicitar cotización por WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+/* =========================
+   DATOS DE PRODUCTOS
+========================= */
+
+const productos = [
+
+    {
+        categoria:"DeVilbiss",
+        titulo:"Concentrador DeVilbiss 5 Litros",
+        imagen:"https://cpapeuropa.com/cdn/shop/files/devilbiss-525-oxygen-concentrator-side-view.webp?v=1775034817&width=1920",
+        descripcion:"Concentrador estacionario DeVilbiss de 5 litros, diseñado para proporcionar oxígeno de manera continua. Cuenta con flujo ajustable y sistema OSD.",
+        flujo:"0.5–5 L/min",
+        oxigeno:"87–96%*",
+        peso:"16.3 kg",
+        tipo:"Estacionario",
+        precio:"$12,500"
+    },
+
+    {
+        categoria:"DeVilbiss",
+        titulo:"Concentrador DeVilbiss 10 Litros",
+        imagen:"https://www.cfs.it/cdn/shop/files/compact1025_1280.jpg?v=1740052884&width=600",
+        descripcion:"Concentrador DeVilbiss de alta capacidad con flujo continuo de 2 a 10 L/min y sistema OSD para monitoreo de oxígeno.",
+        flujo:"2–10 L/min",
+        oxigeno:"87–96%",
+        peso:"19 kg",
+        tipo:"Estacionario",
+        precio:"$28,000"
+    },
+
+    {
+        categoria:"Inogen",
+        titulo:"Inogen One G5 Portátil",
+        imagen:"https://vitalcareusa.com/cdn/shop/files/inogeng5_86e482d4-5cd6-4d7a-ab5d-f891817c0e6a_700x700.png?v=1790009643",
+        descripcion:"Concentrador portátil Inogen One G5 con administración de oxígeno por pulsos y seis ajustes de flujo. El precio se proporciona mediante cotización.",
+        flujo:"1–6 pulsos",
+        oxigeno:"Según configuración",
+        peso:"2.2–2.5 kg*",
+        tipo:"Portátil",
+        precio:"Consultar"
+    }
+
+];
+
+
+/* =========================
+   MODAL
+========================= */
+
+function mostrarProducto(index){
+
+    const p = productos[index];
+
+    document.getElementById("modalImage").src = p.imagen;
+    document.getElementById("modalCategory").textContent = p.categoria;
+    document.getElementById("modalTitle").textContent = p.titulo;
+    document.getElementById("modalDescription").textContent = p.descripcion;
+    document.getElementById("modalFlow").textContent = p.flujo;
+    document.getElementById("modalOxygen").textContent = p.oxigeno;
+    document.getElementById("modalWeight").textContent = p.peso;
+    document.getElementById("modalType").textContent = p.tipo;
+
+    const mensaje =
+        "Hola, me interesa el " +
+        p.titulo +
+        ". Quiero conocer disponibilidad, precio y condiciones del equipo.";
+
+    document.getElementById("modalWhatsapp").href =
+        "https://wa.me/5215651546640?text=" +
+        encodeURIComponent(mensaje);
+
+    document.getElementById("productModal").classList.add("active");
+
+}
+
+
+function cerrarModal(){
+
+    document.getElementById("productModal").classList.remove("active");
+
+}
+
+
+document.getElementById("productModal").addEventListener("click",function(e){
+
+    if(e.target === this){
+        cerrarModal();
+    }
+
+});
+
+
+document.addEventListener("keydown",function(e){
+
+    if(e.key === "Escape"){
+        cerrarModal();
+    }
+
+});
+
+
+/* =========================
+   ORDENAMIENTO
+========================= */
+
+function ordenarProductos(){
+
+    const grid = document.getElementById("productGrid");
+
+    const cards = Array.from(
+        grid.querySelectorAll(".product-card")
+    );
+
+    const orden =
+        document.getElementById("orden").value;
+
+    cards.sort(function(a,b){
+
+        const precioA =
+            parseFloat(a.dataset.price);
+
+        const precioB =
+            parseFloat(b.dataset.price);
+
+        if(orden === "menor"){
+            return precioA - precioB;
+        }
+
+        if(orden === "mayor"){
+            return precioB - precioA;
+        }
+
+        return 0;
+
+    });
+
+    cards.forEach(function(card){
+        grid.appendChild(card);
+    });
+
+}
+
+</script>
+
+
+<!--
+==========================================================
+NOTA TÉCNICA
+
+* Las especificaciones pueden variar según la versión/modelo,
+  configuración y estado del equipo.
+
+* El Inogen One G5 utiliza administración de oxígeno por pulsos
+  con seis ajustes de flujo, no flujo continuo de 5 L/min.
+
+* La selección del equipo y el ajuste del flujo de oxígeno deben
+  realizarse de acuerdo con la indicación del profesional de salud.
+
+==========================================================
+-->
+
+</body>
+</html>
